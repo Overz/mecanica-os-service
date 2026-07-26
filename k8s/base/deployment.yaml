@@ -71,6 +71,8 @@ spec:
               value: "http://otel-collector:4318/v1/traces"
             - name: "OTEL_EXPORTER_OTLP_METRICS_ENDPOINT"
               value: "http://otel-collector:4318/v1/metrics"
+            - name: SERVER_PORT
+              value: "8080"
             - name: DB_URL
               valueFrom:
                 secretKeyRef:
